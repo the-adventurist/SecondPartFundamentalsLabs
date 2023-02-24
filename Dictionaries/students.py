@@ -10,6 +10,5 @@ course = info[0].split('_')
 course = ' '.join(course)
 for current_course, details_info in dict_info.items():
     if current_course == course:
-        print(details_info)
-        for current_name, current_id in details_info:
+        for current_name, current_id in details_info.items():
             print(f'{current_name} - {current_id}')
